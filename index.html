@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Domande e Risposte</title>
+</head>
+<body>
+    <h1>Domande e Risposte</h1>
+    <form method="POST" action="/answer">
+        <label for="question">Inserisci la tua domanda:</label>
+        <input type="text" id="question" name="question"><br><br>
+        <label for="answer">Risposta:</label>
+        <!-- Utilizza style e wrap per adattare dinamicamente l'altezza del campo risposta -->
+        <textarea id="answer" name="answer" readonly style="height: auto;" wrap="soft">{{ answer }}</textarea><br><br>
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>
